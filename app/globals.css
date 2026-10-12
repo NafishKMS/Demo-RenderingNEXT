@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: #334155;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #0b1120;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.badge-blue { background-color: rgba(56, 189, 248, 0.2); color: #38bdf8; }
+.badge-emerald { background-color: rgba(52, 211, 153, 0.2); color: #34d399; }
+.badge-amber { background-color: rgba(251, 191, 36, 0.2); color: #fbbf24; }
+.badge-purple { background-color: rgba(192, 132, 252, 0.2); color: #c084fc; }
+
+.note {
+  background-color: #0f172a;
+  border-left: 4px solid #38bdf8;
+  padding: 10px 14px;
+  border-radius: 4px;
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.counter-box button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.counter-box button:hover {
+  background-color: #1d4ed8;
+}
+
+.counter-box button:last-child {
+  background-color: #dc2626;
+}
