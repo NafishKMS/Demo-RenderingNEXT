@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -10,21 +11,19 @@ export default function Counter() {
   // State untuk menyimpan angka counter
   const [angka, setAngka] = useState(0);
 
-  // Fungsi Tambah (+1) sudah disediakan sebagai contoh acuan
+  // Fungsi Tambah (+1)
   const handleTambah = () => {
     setAngka(angka + 1);
   };
 
-  // TODO 1: Lengkapi fungsi handleKurang agar nilai angka berkurang 1
+  // TODO 1: Fungsi Kurang (-1)
   const handleKurang = () => {
-    // Tulis kodenya di bawah ini:
-
+    setAngka(angka - 1);
   };
 
-  // TODO 2: Lengkapi fungsi handleReset agar nilai angka kembali menjadi 0
+  // TODO 2: Fungsi Reset (kembali ke 0)
   const handleReset = () => {
-    // Tulis kodenya di bawah ini:
-
+    setAngka(0);
   };
 
   return (

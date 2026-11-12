@@ -1,11 +1,10 @@
+
 // ==============================================================================
 // LATIHAN 2: DYNAMIC RENDERING (SSR)
 // ==============================================================================
 
-// TODO 1: Tambahkan konfigurasi force-dynamic di baris bawah ini.
-// Tulis: export const dynamic = "force-dynamic";
-// agar Next.js selalu merender ulang halaman ini di server pada setiap request.
-
+// TODO 1: Konfigurasi force-dynamic
+export const dynamic = "force-dynamic";
 
 export default function DynamicPage() {
   // Variabel waktu server real-time
@@ -16,12 +15,11 @@ export default function DynamicPage() {
       <span className="badge badge-emerald">Dynamic Rendering (SSR)</span>
       <h1 style={{ margin: "0 0 10px 0" }}>Halaman Dinamis</h1>
 
-      {/* TODO 2: Tampilkan variabel waktuServer di dalam tag <b> di bawah ini */}
+      {/* TODO 2: Tampilkan waktu server */}
       <p>
         Waktu server saat ini:{" "}
         <b style={{ color: "#34d399", fontSize: "18px" }}>
-          {/* Tuliskan {waktuServer} di sini */}
-          ... WIB
+          {waktuServer} WIB
         </b>
       </p>
 

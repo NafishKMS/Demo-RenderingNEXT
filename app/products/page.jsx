@@ -1,10 +1,10 @@
+
 // ==============================================================================
 // LATIHAN 3: INCREMENTAL STATIC REGENERATION (ISR)
 // ==============================================================================
 
 // TODO 1: Atur waktu revalidate menjadi 10 detik.
-// Tulis: export const revalidate = 10; tepat di bawah ini.
-
+export const revalidate = 10;
 
 export default function ProductsPage() {
   // Variabel waktu pembuatan cache
@@ -21,12 +21,11 @@ export default function ProductsPage() {
       <span className="badge badge-amber">ISR (Incremental Static Regeneration)</span>
       <h1 style={{ margin: "0 0 10px 0" }}>Katalog Produk</h1>
 
-      {/* TODO 2: Tampilkan variabel waktuCache di dalam tag <b> di bawah ini */}
+      {/* TODO 2: Tampilkan waktu cache */}
       <p>
         Waktu render cache:{" "}
         <b style={{ color: "#fbbf24", fontSize: "18px" }}>
-          {/* Tuliskan {waktuCache} di sini */}
-          ... WIB
+          {waktuCache} WIB
         </b>
       </p>
 
